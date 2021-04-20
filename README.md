@@ -1,7 +1,7 @@
 # Tasas de impuestos de la UE de Magento
 A partir del 1 de enero de 2015, la regulación fiscal de la UE ha cambiado con respecto a la fiscalidad. En algunos casos, en lugar del cálculo de impuestos original, donde el vendedor tomó la tasa impositiva de su propio país, el impuesto ahora debe basarse en el país del vendedor. La mayoría de estos casos se refieren a la venta de bienes o servicios digitales. Dentro de Magento, esto simplemente significa que el impuesto se calcula utilizando tasas impositivas que difieren según el país de la UE. Este no es un repositorio que intente responder a la pregunta de si lo necesita o no. En cambio, si usted o su contable han decidido que dicho cálculo de impuestos es el caso, este repositorio le proporciona las tasas de impuestos.
 
-Este repositorio contiene un archivo tax_rates_eu.csv que se puede importar a la configuración del sistema de Magento para configurar las tasas de impuestos automáticamente.
+Este repositorio contiene un archivo <code> tax_rates_eu.csv </code> que se puede importar a la configuración del sistema de Magento para configurar las tasas de impuestos automáticamente.
 
 Uso de Magento 1.x
 Inicie sesión en su backend de Magento y vaya a Ventas> Impuestos> Tasas de impuestos de importación / exportación. Utilice las tasas de impuestos a la exportación para respaldar sus tasas anteriores. Use Import Tax Rates para cargar el archivo tax_rates_eu.csv desde este repositorio.
