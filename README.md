@@ -1,57 +1,77 @@
-# Tasas de impuestos de la UE de Magento
-A partir del 1 de enero de 2015, la regulación fiscal de la UE ha cambiado con respecto a la fiscalidad. En algunos casos, en lugar del cálculo de impuestos original, donde el vendedor tomó la tasa impositiva de su propio país, el impuesto ahora debe basarse en el país del vendedor. La mayoría de estos casos se refieren a la venta de bienes o servicios digitales. Dentro de Magento, esto simplemente significa que el impuesto se calcula utilizando tasas impositivas que difieren según el país de la UE. Este no es un repositorio que intente responder a la pregunta de si lo necesita o no. En cambio, si usted o su contable han decidido que dicho cálculo de impuestos es el caso, este repositorio le proporciona las tasas de impuestos.
+Magento EU Tax Rates
+====================
 
-Este repositorio contiene un archivo <code> tax_rates_eu.csv </code> que se puede importar a la configuración del sistema de Magento para configurar las tasas de impuestos automáticamente.
+Starting from 1st of January 2015, EU tax regulation has changed regarding taxation. In some cases, 
+instead of the original tax calculation,
+where the seller took the tax rate from his own country, the tax now needs to be based on the country of
+the seller. Most of these cases deal with the sales of digital goods or digital services.
+Within Magento, this simply means that the tax is calculated using tax rates that differ per EU
+country. This is not a repository that tries to answer the question whether you need this or not. Instead, if you or your
+bookkeeper has decided that such tax calculation is indeed the case, this repository gives you the tax rates.
 
-<h2>Uso de Magento 1.x </h2>
-Inicie sesión en su backend de Magento y vaya a <code> Ventas> Impuestos> Tasas de impuestos de importación / exportación </code>. Utilice la <code> exportacion de tasas de impuestos </code> para respaldar sus tasas anteriores. Usa <code> Import Tax Rates </code> para cargar el archivo <code>tax_rates_eu.csv</code> desde este repositorio.
+This repository contains a file `tax_rates_eu.csv` which can be imported into the Magento System Configuration 
+to setup tax rates automatically.
 
-Tenga en cuenta que la primera fila del CSV está en inglés y necesitará que se cargue la configuración regional en inglés para que este CSV se importe correctamente. Para permitir esto: Cambie la configuración regional en la parte inferior de su Panel de administración de Magento a "Inglés (Estados Unidos)".
+## Usage Magento 1.x
+Login to your Magento backend and navigate to `Sales > Tax > Import / Export Tax Rates`. 
+Use `Export Tax Rates` to backup your previous rates. Use `Import Tax Rates` to upload the file 
+`tax_rates_eu.csv` from this repository.
 
-<h2>Uso de Magento 2.x</h2>
-Inicie sesión en su backend de Magento y vaya a <code>Sistema> Tasas de impuestos de importación / exportación</code>. Utilice <code>exportacion de las tasas de impuestos</code> para respaldar sus tasas anteriores. Haga clic en <code>Examinar ...</code> y seleccione el archivo descargado <code>tax_rates_eu.csv </code>de este repositorio y haga clic en <code>Imnport Tax Rates.</code>
+Note that the first row of the CSV is in English, and you'll need the English locale to be loaded for this CSV
+to be imported correctly. To allow for this: Change the locale in the bottom of your Magento Admin Panel
+to "English (United States)".
 
-<h2>Administrar las tasas de impuestos automáticamente con la extensión Yireo TaxRatesManager</h2>
-Periódicamente, las tasas impositivas cambian. Cuando se trata de una tienda Magento concurrida, querá cambiar las tasas impositivas tan pronto como llegue el momento, para evitar ventas después de esa fecha con las tasas impositivas incorrectas. Aquí es donde nuestra extensión paga Yireo TaxRatesManager entra en escena. Garantiza que las tasas impositivas específicas se modifiquen correctamente en la fecha correcta.
+## Usage Magento 2.x
+Login to your Magento backend and navigate to `System > Import/Export Tax Rates`. 
+Use `Export Tax Rates` to backup your previous rates. Click on `Browse ...` and select the downloaded  file 
+`tax_rates_eu.csv` from this repository and click on `Imnport Tax Rates`.
 
-Esta extensión comercial de Yireo en realidad hace uso de la información de este repositorio. El archivo <code>feeds</code>.json se usa para obtener una lista de posibles fuentes, mientras que la convención de nomenclatura de los otros archivos CSV asegura que en una fecha específica cambien los archivos correctos. La extensión depende de cron para ejecutarse. También se envía con una capacidad de corrección automática a través de cron y a través del backend: la opción de backend le permite obtener una vista previa del tipo de cambios que se realizarían en una fecha específica.
+## Managing taxrates automatically with the Yireo TaxRatesManager extension
+Periodically, tax rates change. When dealing with a busy Magento shop, you will want to change the tax rates as soon as the time is there, to prevent sales after
+that date with the wrong tax rates. This is where our paid extension Yireo TaxRatesManager extension comes into the picture. It guarantees that a specific tax
+rates is properly changed at the right date.
 
-Extensión Yireo TaxRatesManager para Magento 1: https://www.yireo.com/software/magento-extensions/taxratesmanager
-Extensión Yireo TaxRatesManager para Magento 2: https://www.yireo.com/software/magento-extensions/taxratesmanager2
+This commercial Yireo extension actually makes use of the information in this repository. The `feeds.json` file is used to get a listing of possible feeds, while
+the naming convention of the other CSV files makes sure that on a specific date the right files switch. The extension relies on cron to be running. It also ships
+with an automatic fixing ability via cron and via the backend: The backend option allows you to preview what kind of changes would be made at a specific date.
 
-<h2>Libre de responsabilidad sobre la corrección</h2>
-No somos contables. No pretendemos ser contables. Si desea asegurarse de que estas tasas impositivas se apliquen a su propia tienda o no, asegúrese de consultar a su contable local.
+- Yireo TaxRatesManager extension for Magento 1: https://www.yireo.com/software/magento-extensions/taxratesmanager
+- Yireo TaxRatesManager extension for Magento 2: https://www.yireo.com/software/magento-extensions/taxratesmanager2
 
-Tomamos la información de varios sitios de terceros como Wikipedia. Es posible que la información sea incorrecta. Si tiene un mejor recurso para basar este archivo CSV, háganoslo saber.
+## Disclaimer on correctness
+We are not bookkeepers. We do not claim to be bookkeepers. If you want to make sure whether these tax rates apply to your own
+store or not, make sure to consult your local bookkeeper instead.
 
-Este archivo ha sido probado hasta ahora en las siguientes versiones de Magento:
+We took the information from various third party sites like Wikipedia. The information might be incorrect.
+If you have a better resource to base this CSV file off, please let us know.
 
-Magento CE 1.9
-Magento CE 1.8
-Magento CE 2.0
-Magento CE 2.1
-Magento CE 2.2
-Magento CE 2.3
+This file has been tested so far on the following Magento versions:
+* Magento CE 1.9
+* Magento CE 1.8
+* Magento CE 2.0
+* Magento CE 2.1
+* Magento CE 2.2
+* Magento CE 2.3
 
-Lo más probable es que esto también funcione sin problemas en las versiones EE.
+Most likely this also works without issues on EE versions.
 
-Necesitamos ayuda
-Necesitamos tu ayuda. Si descarga esta lista y encuentra un error, háganoslo saber (y a la comunidad) a través de info@yireo.com.
+## We need help
+We need your help. If you download this list and happen to find a mistake, please let us (and the community)
+know through info@yireo.com.
 
-<h2>Podras ver más información aquí: </h2>
+More information is here:
+- http://europa.eu/youreurope/business/vat-customs/buy-sell/
+- http://www.vatlive.com/vat-rates/european-vat-rates/eu-vat-rates/
+- https://github.com/yireo/Magento_EU_Tax_Rates/issues/url
 
-http://europa.eu/youreurope/business/vat-customs/buy-sell/
-http://www.vatlive.com/vat-rates/european-vat-rates/eu-vat-rates/
-https://github.com/yireo/Magento_EU_Tax_Rates/issues/url
+## Testing
+### Testing for TaxRatesManager functionality
+Fork this GitHub repository and then add a specific file. Next, reconfigure your TaxRatesManager extension to use a
+different CSV file.
 
-<h2>Testing</h2>
+### Testing for tax changes in the CSV files
+For this GitHub repository and add a `diff` file in the `diff` folder following the naming standard of other files.
+For instance, a diff file with a filename `diff/tax_rates_eu_2020-07-01.diff`. You can also use the script
+`bin/create_diff.sh` to generate this file based on changes you have made to `tax_rates_eu.csv`.
 
-<h3>Prueba de la funcionalidad TaxRatesManager<h3>
-  
-Bifurque este repositorio de GitHub y luego agregue un archivo específico. A continuación, vuelva a configurar su extensión TaxRatesManager para usar un archivo CSV diferente.
-
-<h3>Prueba de cambios de impuestos en los archivos CSV</h3>
-
-Para este repositorio de GitHub y agregue un archivo <code>diff</code> en la carpeta <code>diff</code> siguiendo el estándar de nomenclatura de otros archivos. Por ejemplo, un archivo diff con un nombre de archivo <code>diff / tax_rates_eu_2020-07-01.diff.</code> También puede utilizar el script <code>bin / create_diff.sh</code>para generar este archivo basándose en los cambios que ha realizado en <code>tax_rates_eu.csv</code>
-
-A continuación, ejecute el script <code>bin / apply_diff.sh</code>.
+Next, run the script `bin/apply_diff.sh`.
