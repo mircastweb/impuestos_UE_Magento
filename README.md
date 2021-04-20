@@ -3,7 +3,7 @@ A partir del 1 de enero de 2015, la regulación fiscal de la UE ha cambiado con 
 
 Este repositorio contiene un archivo <code> tax_rates_eu.csv </code> que se puede importar a la configuración del sistema de Magento para configurar las tasas de impuestos automáticamente.
 
-Uso de Magento 1.x
+<h2>Uso de Magento 1.x </h2>
 Inicie sesión en su backend de Magento y vaya a Ventas> Impuestos> Tasas de impuestos de importación / exportación. Utilice las tasas de impuestos a la exportación para respaldar sus tasas anteriores. Use Import Tax Rates para cargar el archivo tax_rates_eu.csv desde este repositorio.
 
 Tenga en cuenta que la primera fila del CSV está en inglés y necesitará que se cargue la configuración regional en inglés para que este CSV se importe correctamente. Para permitir esto: Cambie la configuración regional en la parte inferior de su Panel de administración de Magento a "Inglés (Estados Unidos)".
