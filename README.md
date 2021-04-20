@@ -12,14 +12,14 @@ Tenga en cuenta que la primera fila del CSV está en inglés y necesitará que s
 Inicie sesión en su backend de Magento y vaya a <code>Sistema> Tasas de impuestos de importación / exportación</code>. Utilice <code>exportacion de las tasas de impuestos</code> para respaldar sus tasas anteriores. Haga clic en <code>Examinar ...</code> y seleccione el archivo descargado <code>tax_rates_eu.csv </code>de este repositorio y haga clic en <code>Imnport Tax Rates.</code>
 
 <h2>Administrar las tasas de impuestos automáticamente con la extensión Yireo TaxRatesManager</h2>
-Periódicamente, las tasas impositivas cambian. Cuando se trata de una tienda Magento concurrida, querrá cambiar las tasas impositivas tan pronto como llegue el momento, para evitar ventas después de esa fecha con las tasas impositivas incorrectas. Aquí es donde nuestra extensión paga Yireo TaxRatesManager entra en escena. Garantiza que las tasas impositivas específicas se modifiquen correctamente en la fecha correcta.
+Periódicamente, las tasas impositivas cambian. Cuando se trata de una tienda Magento concurrida, querá cambiar las tasas impositivas tan pronto como llegue el momento, para evitar ventas después de esa fecha con las tasas impositivas incorrectas. Aquí es donde nuestra extensión paga Yireo TaxRatesManager entra en escena. Garantiza que las tasas impositivas específicas se modifiquen correctamente en la fecha correcta.
 
-Esta extensión comercial de Yireo en realidad hace uso de la información de este repositorio. El archivo <code>feeds<code>.json se usa para obtener una lista de posibles fuentes, mientras que la convención de nomenclatura de los otros archivos CSV asegura que en una fecha específica cambien los archivos correctos. La extensión depende de cron para ejecutarse. También se envía con una capacidad de corrección automática a través de cron y a través del backend: la opción de backend le permite obtener una vista previa del tipo de cambios que se realizarían en una fecha específica.
+Esta extensión comercial de Yireo en realidad hace uso de la información de este repositorio. El archivo <code>feeds</code>.json se usa para obtener una lista de posibles fuentes, mientras que la convención de nomenclatura de los otros archivos CSV asegura que en una fecha específica cambien los archivos correctos. La extensión depende de cron para ejecutarse. También se envía con una capacidad de corrección automática a través de cron y a través del backend: la opción de backend le permite obtener una vista previa del tipo de cambios que se realizarían en una fecha específica.
 
 Extensión Yireo TaxRatesManager para Magento 1: https://www.yireo.com/software/magento-extensions/taxratesmanager
 Extensión Yireo TaxRatesManager para Magento 2: https://www.yireo.com/software/magento-extensions/taxratesmanager2
 
-<h2>Descargo de responsabilidad sobre la corrección</h2>
+<h2>Libre de responsabilidad sobre la corrección</h2>
 No somos contables. No pretendemos ser contables. Si desea asegurarse de que estas tasas impositivas se apliquen a su propia tienda o no, asegúrese de consultar a su contable local.
 
 Tomamos la información de varios sitios de terceros como Wikipedia. Es posible que la información sea incorrecta. Si tiene un mejor recurso para basar este archivo CSV, háganoslo saber.
