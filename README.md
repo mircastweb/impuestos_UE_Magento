@@ -6,8 +6,7 @@ en lugar del cálculo de impuestos original,
 donde el vendedor tomó la tasa impositiva de su propio país, el impuesto ahora debe basarse en el país de
 el vendedor. La mayoría de estos casos se relacionan con las ventas de bienes o servicios digitales.
 Dentro de Magento, esto simplemente significa que el impuesto se calcula utilizando tasas impositivas que difieren según la UE.
-país. Este no es un repositorio que intenta responder a la pregunta de si lo necesita o no. En cambio, si usted o su
-tenedor de libros ha decidido que tal cálculo de impuestos es efectivamente el caso, este repositorio le proporciona las tasas de impuestos.
+país. 
 
 Este repositorio contiene un archivo `tax_rates_eu.csv` que se puede importar a la configuración del sistema Magento
 para configurar las tasas de impuestos automáticamente.
